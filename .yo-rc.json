@@ -1,0 +1,81 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.mycompany.myapp",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "monolith",
+    "baseName": "jhipster",
+    "packageName": "com.mycompany.myapp",
+    "packageFolder": "com/mycompany/myapp",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Mjc1NTM1MGMzMmYyMmQ4ODFkMDU5OTE4YjM1ZDY0ZDJmNGJkNDIxYjRmY2Y3MmMxOGI0ZWM1YmEyN2E2YzkyM2U0MDQ0ZjRmZGM3NGIwMzUxMThmZDVkMThhMTM4N2EyYzE2ZGNkNWM5YjNiZmNkZjlhZjQyZTk2OWMwYTc2YjI=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nav-element",
+        "version": "2.1.4"
+      },
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.5.0"
+      },
+      {
+        "name": "generator-jhipster-primeng",
+        "version": "2.3.0"
+      },
+      {
+        "name": "generator-jhipster-swagger-cli",
+        "version": "3.0.1"
+      },
+      {
+        "name": "generator-jhipster-spring-cloud-stream",
+        "version": "1.0.0"
+      },
+      {
+        "name": "generator-jhipster-primeng-charts",
+        "version": "1.2.0"
+      },
+      {
+        "name": "generator-jhipster-leafletmap",
+        "version": "2.0.0"
+      },
+      {
+        "name": "generator-jhipster-audit-helper",
+        "version": "1.0.3"
+      },
+      {
+        "name": "generator-jhipster-angular-material-integration",
+        "version": "1.0.17"
+      },
+      {
+        "name": "generator-jhipster-translation",
+        "version": "1.0.4"
+      }
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": [
+      "fr"
+    ]
+  }
+}
