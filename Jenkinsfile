@@ -5,7 +5,7 @@ node {
         checkout scm
     }
 
-    gitlabCommitStatus('build') {
+    /*gitlabCommitStatus('build') {
         docker.image('jhipster/jhipster:v5.5.0').inside('-u root -e MAVEN_OPTS="-Duser.home=./"') {
             stage('check java') {
                 sh "java -version"
@@ -67,5 +67,5 @@ node {
                 dockerImage.push 'latest'
             }
         }
-    }
+    }*/
 }
