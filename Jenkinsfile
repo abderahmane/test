@@ -21,8 +21,4 @@ node {
 		sh "./mvnw com.github.eirslett:frontend-maven-plugin:npm"
 	}
 
-	stage('packaging') {
-		sh "./mvnw verify deploy -Pprod -DskipTests"
-	}
-
 }
