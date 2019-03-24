@@ -26,8 +26,6 @@ node {
 			sh "./mvnw test"
 		} catch(err) {
 			throw err
-		} finally {
-			junit '**/target/surefire-reports/TEST-*.xml'
 		}
 	}
 
@@ -36,8 +34,6 @@ node {
 			sh "./mvnw com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='test -- -u'"
 		} catch(err) {
 			throw err
-		} finally {
-			junit '**/target/test-results/jest/TESTS-*.xml'
 		}
 	}
 
