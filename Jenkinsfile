@@ -21,26 +21,6 @@ node {
 		sh "./mvnw com.github.eirslett:frontend-maven-plugin:npm"
 	}
 
-	stage('backend tests') {
-		try {
-			sh "./mvnw test"
-		} catch(err) {
-			throw err
-		}
-	}
-
-	stage('frontend tests') {
-		try {
-			sh "./mvnw com.github.eirslett:frontend-maven-plugin:npm -Dfrontend.npm.arguments='test -- -u'"
-		} catch(err) {
-			throw err
-		}
-	}
-
-	stage('packaging') {
-		sh "./mvnw verify deploy -Pprod -DskipTests"
-		archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
-	}
 	stage('quality analysis') {
 		withSonarQubeEnv('sonar') {
 			sh "./mvnw sonar:sonar"
