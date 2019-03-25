@@ -21,6 +21,10 @@ node {
 		sh "./mvnw com.github.eirslett:frontend-maven-plugin:npm"
 	}
 	
+	stage('backend tests') {
+		sh "./mvnw test"
+	}
+	
 	stage('generate war') {
         sh "./mvnw install -DskipTests"
     }
