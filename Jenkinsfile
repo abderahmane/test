@@ -22,6 +22,6 @@ node {
 	}
 	
 	stage('generate war') {
-        sh "./mvnw install"
+        sh "./mvnw install -DskipTests"
     }
 }
